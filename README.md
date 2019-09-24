@@ -12,6 +12,7 @@
 *classnames*
 *tiny-cookie*
 *local storage*
+*socket io*
 <h1>######################</h1>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
