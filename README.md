@@ -6,6 +6,7 @@
 *babel*
 *eslint*
 *sass*
+*postcss*
 *axios*
 *jwt*
 *?prettier?*
