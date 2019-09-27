@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.pagin-btn {
+  font-family: 'Roboto';
+  color: #323232;
+  background-color: #EFEFEF;
+  border-radius: 0.3em;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 0 0.25em;
+  padding: 0.5em 0.75em;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover:not(:active) {
+    transition: transform 0.15s;
+    transform: translateY(-1px);
+  }
+}
+
+.pagin-active {
+  background-color: #0064FF;
+  color: white;
+
+  &:hover,
+  &:hover:not(:active) {
+    transform: none;
+  }
+}

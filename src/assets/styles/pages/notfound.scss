@@ -1,0 +1,67 @@
+.gif__container {
+  position: relative;
+  font-size: 36px;
+}
+
+.redux_txt, .tests_txt {
+  position: absolute;
+  top: 130px;
+}
+
+.redux_txt {
+  left: 100px;
+}
+
+.api, .deadline {
+  top: 180px;
+}
+
+.tests_txt {
+  right: 100px;
+}
+
+.notfound_container {
+  font-family: 'Roboto';
+  margin-bottom: 100px;
+}
+
+.notfound_container h1 {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.notfound_container h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.btn_container {
+  margin: 20px auto;
+}
+
+@media all and (max-width: 425px) {
+  .gif {
+    width: 75%;
+    height: 75%;
+
+    &__container {
+      margin: 0 15px;
+    }
+  }
+
+  .redux_txt, .tests_txt {
+    font-size: 24px;
+    top: 35px;
+  }
+  .redux_txt {
+    left: 0;
+  }
+  .api, .deadline {
+    top: 70px;
+  }
+
+  .tests_txt {
+    right: 0;
+  }
+
+}

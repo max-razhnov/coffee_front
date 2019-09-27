@@ -1,3 +1,20 @@
+<h1>Tehnology stack</h1>
+*react*
+*react-router/react-spoon*
+*redux/thunk/saga*
+*proptypes*
+*babel*
+*eslint*
+*sass*
+*axios*
+*jwt*
+*?prettier?*
+*classnames*
+*tiny-cookie*
+*local storage*
+*socket io*
+<h1>######################</h1>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
