@@ -22,7 +22,7 @@ const SpinButton = props => (
             <span />
           </div>
         )}
-        <div className={classnames({ [styles.hidden]: props.isLoading })}>{props.text}</div>
+        <div className={classn ames({ [styles.hidden]: props.isLoading })}>{props.text}</div>
       </>
     }
   />

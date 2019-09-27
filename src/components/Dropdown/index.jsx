@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import List from "./List";
-import { ReactComponent as DropdownArrowIcon } from "../../icons/DropdownArrow.svg";
+import { ReactComponent as DropdownArrowIcon } from "../../assets/icons/DropdownArrow.svg";
 
 let timeOutId = null;
 
