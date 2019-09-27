@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.scss";
+import "./assets/style/App.scss";
 import LoginPage from "./views/LoginPage/index";
 import PageTeamSelect from "./views/PageTeamSelect";
 import { BrowserRouter as Router, Route } from "react-router-dom";
