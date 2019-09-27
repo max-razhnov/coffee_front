@@ -19,6 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "eslint -c .eslintrc.json src/",
+    "fix-lint": "eslint -c .eslintrc.json src/**/*.js --fix",
+    "format": "prettier --write src/**/*.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
