@@ -56,7 +56,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,md}": [
+    "src/*.(js|jsx|ts|tsx|json|md)": [
       "npm run fix-lint",
       "git add"
     ]
