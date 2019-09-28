@@ -33,8 +33,7 @@ id: value,
 title: value,
 name: value,
 place: value,
-time: value
-}
+time: value}
 ]
 
 
