@@ -5,11 +5,10 @@
     "node": true,
     "jest": true
   },
-  "extends": ["airbnb", "plugin:jest/recommended"],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
+  "extends": [
+    "airbnb",
+    "plugin:jest/recommended"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -23,9 +22,10 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-console": 0,
     "no-use-before-define": [2, { "functions": false, "classes": true }],
-    "no-param-reassign": [1, { "props": false }],
+    "no-param-reassign": 0,
     "semi": [2, "always"],
-    "import/no-unresolved": [1, { "caseSensitive": false }],
-    "no-plusplus": 0
+    "import/no-unresolved": 0,
+    "no-plusplus": 0,
+    "no-unused-vars": 0
   }
 }

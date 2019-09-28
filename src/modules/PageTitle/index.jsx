@@ -1,25 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
-class PageTitle extends Component {
-  render() {
-    const { title, desc, mouseOver, mouseOut, click, withShadowContainer } = this.props;
-    let styleCheck = mouseOver ? "main__header__link" : "main__header";
-    return (
-      <>
-        <div className="main">
-          <h1 className={styleCheck} onMouseOver={mouseOver} onMouseOut={mouseOut} onClick={click}>
-            {title}
-          </h1>
-          <p className="main__description">{desc}</p>
-        </div>
-        {withShadowContainer ? <div className="shadow_container" /> : null}
-      </>
-    );
-  }
-}
+const PageTitle = (props) => {
+  console.log(props);
+  return (
+    <div className="main">
+      <h1 className="main__header">{props.title}</h1>
+      <p className="main__description">{props.subTitle}</p>
+    </div>
+  );
+};
+
+PageTitle.propTypes = {
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
+};
 
 PageTitle.defaultProps = {
-  withShadowContainer: true,
+  title: "",
+  subTitle: "",
 };
 
 export default PageTitle;
