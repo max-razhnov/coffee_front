@@ -1,17 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  timeConverter,
-  letterTransform,
-  checkerProp,
-  secConverter,
-} from "../../../helpers/helpers";
 
 const List = ({ events }) => {
   const userEvents = [...events];
-  userEvents.sort((a, b) => {
-    return a.date - b.date;
-  });
+  userEvents.sort((a, b) => a.date - b.date);
   return (
     <>
       {events.length === 0 ? (
@@ -28,23 +20,22 @@ const List = ({ events }) => {
               return (
                 <div className="event-item" key={id}>
                   <h4 className="event_title">
-                    {checkerProp(item.topic.title)
+                    {item.topic.title
                       ? "Default title"
-                      : letterTransform(item.topic.title)}
+                      : item.topic.title}
                   </h4>
                   <p className="event_place">
-                    {checkerProp(item.topic.address) ? "Default address" : item.topic.address}
+                    item.topic.address ? "Default address" : item.topic.address}
                   </p>
                   <p className="event_time">
-                    {checkerProp(item.date)
+                    {item.date
                       ? "Default date"
-                      : `${timeConverter(item.date)} - ${secConverter(item.date)}`}
+                      : `${item.date} - ${item.date}`}
                   </p>
                 </div>
               );
-            } else {
-              return <></>;
             }
+            return <></>;
           })}
         </ul>
       )}

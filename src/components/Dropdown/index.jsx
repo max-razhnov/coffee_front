@@ -5,7 +5,7 @@ import { ReactComponent as DropdownArrowIcon } from "../../assets/icons/Dropdown
 let timeOutId = null;
 
 const getLabelByValue = (options, value) => {
-  const option = (options || []).find(option => option.value === value);
+  const option = (options || []).find((option) => option.value === value);
 
   return option.label;
 };
@@ -15,6 +15,7 @@ const getLabelByValue = (options, value) => {
  * @param options (array of label-value objects)
  * example: [{label: "label1", value: "value1"}, {label: "label2", value: "value2"}]
  */
+
 const Dropdown = ({ options, selectedValue, onSelect }) => {
   const [isOpened, setIsOpened] = useState(false);
   const selection = selectedValue ? getLabelByValue(options, selectedValue) : "Select department";
@@ -37,7 +38,7 @@ const Dropdown = ({ options, selectedValue, onSelect }) => {
       </div>
       {isOpened && (
         <List
-          onItemClick={value => {
+          onItemClick={(value) => {
             onSelect(value);
             setIsOpened(false);
           }}
