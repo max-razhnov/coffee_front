@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.svg";
-import defaultUser from "../../assets/img/defaultUser.png";
+// import defaultUser from "../../assets/img/defaultUser.png";
 import Button from "../Button";
 import EventsDropDown from "../EventsDropdown";
 import { eventsData } from "../../testData";
@@ -28,11 +28,7 @@ const Header = (props) => (
       {props.isActive ? (
         <div>
           <div className="header-nav">
-            <img
-              className="header-user__img"
-              src={props.avatar}
-              alt="avatar"
-            />
+            <img className="header-user__img" src={props.avatar} alt="avatar" />
             <span className="header-user__info">{props.fullName}</span>
             <Button
               text="Log out"

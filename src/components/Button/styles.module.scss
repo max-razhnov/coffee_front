@@ -1,4 +1,5 @@
 .section__btn {
+  display: block;
   position: relative;
   padding: 6px 20px;
   min-width: 168px;
@@ -6,9 +7,10 @@
   box-sizing: border-box;
   border-radius: 20px;
   background: none;
-  font: 18px/normal "Roboto";
+  font: 18px / normal "Roboto";
   line-height: 21px;
   text-align: center;
+  margin: 0 auto;
 
   &:hover {
     cursor: pointer;
@@ -22,13 +24,13 @@
 }
 
 .primary {
-  color: #0064FF;
+  color: #0064ff;
   border: 2px solid rgba(0, 100, 255, 0.3);
   // width: 222px;
 
   &:hover:enabled {
-    background: #0064FF;
-    color: #FFFFFF;
+    background: #0064ff;
+    color: #ffffff;
   }
 }
 
@@ -50,12 +52,12 @@
 
 .subscribe {
   border: 2px solid rgba(0, 180, 100, 0.3);
-  color: #00B464;
+  color: #00b464;
 
   &:hover:enabled {
-    background: #00B464;
+    background: #00b464;
     border: 2px solid rgba(0, 180, 100, 0.3);
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -70,15 +72,14 @@
   align-items: center;
 }
 
-
 .unsubscribe {
-  color: #FF0032;
+  color: #ff0032;
   border: none;
 
   &:hover:enabled {
-    background:  none;
+    background: none;
     border: none;
     opacity: 0.5;
-    color: #FF0032;
+    color: #ff0032;
   }
 }
