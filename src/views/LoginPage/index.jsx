@@ -4,9 +4,14 @@ import Footer from "../../components/Footer";
 import PageTitle from "../../modules/PageTitle";
 import SectionInfo from "../../modules/SectionInfo";
 import Button from "../../components/Button";
-// import TelegramLoginButton from "../../helpers/TelegramLoginButton";
 
 class LoginPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoadingData: false
+    };
+  }
   render() {
     return (
       <>
@@ -16,7 +21,14 @@ class LoginPage extends Component {
           subTitle="with Wargaming S&C"
         />
         <SectionInfo title="Use Telegram to be aware of upcoming meets and manage subscriptions:" />
-        <Button text="Log in via Telegram" type={}/>
+        <Button
+          text="Log in via Telegram"
+          disabled={false}
+          type={"primary"}
+          onClick={() => {
+            this.props.history.push("/teams");
+          }}
+        />
         <Footer />
       </>
     );

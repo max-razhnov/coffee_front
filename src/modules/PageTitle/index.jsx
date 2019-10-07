@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const PageTitle = (props) => {
-  console.log(props);
+const PageTitle = props => {
   return (
     <div className="main">
       <h1 className="main__header">{props.title}</h1>
@@ -13,12 +12,12 @@ const PageTitle = (props) => {
 
 PageTitle.propTypes = {
   title: PropTypes.string,
-  subTitle: PropTypes.string,
+  subTitle: PropTypes.string
 };
 
 PageTitle.defaultProps = {
   title: "",
-  subTitle: "",
+  subTitle: ""
 };
 
 export default PageTitle;
