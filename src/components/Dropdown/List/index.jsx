@@ -4,22 +4,26 @@ import PropTypes from "prop-types";
 const List = ({ onItemClick, options }) => {
   return (
     <div className="department-list">
-      {options.map(({ label, value }) => (
-        <button key={value} onClick={() => onItemClick(value)}>
-          {label}
-        </button>
-      ))}
+      {options.map(({ label, value }) => {
+        console.log(label);
+        console.log(value);
+        return (
+          <button key={value} onClick={() => onItemClick(value)}>
+            {label}
+          </button>
+        );
+      })}
     </div>
   );
 };
 
 List.propTypes = {
   onItemClick: PropTypes.func,
-  options: PropTypes.array,
+  options: PropTypes.array
 };
 
 List.defaultProps = {
-  options: [],
+  options: []
 };
 
 export default List;

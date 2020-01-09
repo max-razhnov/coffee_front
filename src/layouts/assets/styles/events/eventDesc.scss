@@ -1,0 +1,60 @@
+.eventDesc {
+    margin: 0 60px;
+}
+
+.eventDescItem {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1.3px solid #e1e1e1;
+}
+
+.eventDescItem  a{
+    text-decoration: none;
+}
+
+.selectedEvent {
+    display: flex;
+    align-items: center;
+}
+
+.selectedEvent span {
+    margin: 0 30px;
+    color: #C8C8C8;
+    font-family: sans-serif;
+}
+
+.selectedEvent span::before{
+    content: "✓";
+    padding-right: 5px;
+}
+
+.time-desc {
+    padding-left: 3px;
+}
+
+@media all and (max-width: 550px) {
+    .eventDesc {
+        margin: 0 30px;
+    }
+    .eventDescItem {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .eventDescItem button {
+        align-self: center;
+    }
+
+    .eventDesc button {
+        margin-bottom: 15px;
+    }
+ }
+
+ @media all and (max-width: 650px) { 
+    .selectedEvent span{
+        display: none;
+    }
+}
