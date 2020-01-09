@@ -12,9 +12,9 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={LoginPage} />
-          <Route exact path="/teams" component={PageTeamSelect} />
+          {/*<Route exact path="/teams" component={PageTeamSelect} />*/}
           {/*<Route exact path="/topic" component={SubscriptionsPage}/>*/}
-          <Route exact path="/404" component={NotFound} />
+          {/*<Route exact path="/404" component={NotFound} />*/}
           <Route exact component={NotFound} />
         </Switch>
       </Router>
